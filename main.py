@@ -1,11 +1,11 @@
 import os 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import discord
 import csv
 import random
 from discord.ext import commands
 
-load_dotenv()
+#load_dotenv()
 TOKEN = os.getenv("TOKEN")
 
 intents = discord.Intents.all()
