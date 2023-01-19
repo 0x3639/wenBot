@@ -13,4 +13,4 @@ services:
       - wen-net
 
     environment:
-      - TOKEN="TOKEN"
+      - TOKEN=${TOKEN}
