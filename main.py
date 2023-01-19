@@ -1,8 +1,12 @@
-import env
+import os 
+from dotenv import load_dotenv
 import discord
 import csv
 import random
 from discord.ext import commands
+
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='!',intents=intents)
@@ -16,6 +20,6 @@ async def wen(ctx):
         random_row = random.choice(list(data))
         print(random_row[0])
 
-        await ctx.send(random_row[0])
+        await ctx.send(random_row[0] + " - Mr. Kaine")
 
-#bot.run(env.token)
+bot.run(TOKEN)
