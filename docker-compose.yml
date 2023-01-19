@@ -4,12 +4,13 @@ networks:
   wen-net:
     driver: bridge
 
-wend:
-  build: .
-  container_name: wen
-  restart: unless-stopped
-  networks:
-    - wen-net
+services:
+  wend:
+    build: .
+    container_name: wen
+    restart: unless-stopped
+    networks:
+      - wen-net
 
-  environment:
-    - TOKEN="TOKEN"
+    environment:
+      - TOKEN="TOKEN"
