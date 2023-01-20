@@ -1,0 +1,331 @@
+Alphanet Inception 19th of  November. Make sure your Pillars are active for the Legacy Snapshot Block 1395395
+~1 million sats would be necessary to cover the tx fees
+Every donation from the community is appreciated.The funds will be burned.
+Yes. Taproot 48 blocks away.
+Yes. The community decides.
+"No, ~1000000 sats is enough to cover the fees"
+Thank you for all donations & your generosity
+Great news: Taproot successfully activated.
+"""If you don't believe it or don't get it, I don't have the time to try to convince you, sorry."""
+Congratulations to everyone that participated into the Zenon Public Incentivized Testnet. All $PP will be distributed as $QSR at Alphanet launch (reminder: 1000 PP = 1 QSR).
+"All Genesis Pillars are eligible for Alphanet Big Bang. Thank you for supporting the network. New instructions will be available soon. The community is the most important part of a decentralized project. Thank you for all the feedback. The next event is the Final Legacy Snapshot Block height 1405000. Remember: not your keys, not your coins."
+The wZNN smart contract on Binance Smart Chain has been hacked. We are doing everything we can to mitigate the issue.
+wZNN is being restored. Please be patient.
+PancakeSwap wZNN/WBNB pool has been successfully halted.wZNN restoration is in progress.
+An attempt to contact the malicious actor via tx metadata has been made and a bounty will be available in exchange for returning the funds.
+The Final Legacy Snapshot Block 1405000    Legacy Block hash: cf267e47796201b9590901964899d3290aa8e3309abae13967398a6da1e6e39f    Any transactions AFTER this block will not be part of the Alphanet Gensis.
+Alphanet is live
+Hash of the first produced momentum: 83a3bf2b54596fc1843373be30b75c65a7cce7fb946d9c673d0d8550a238dc75
+Syrius v0.0.1-alphanet is now live: https://github.com/zenon-network/syrius/releases/latest
+"I encourage the community to setup other seeders. But make sure you're connecting via a secure channel (in this case, wss - secure websockets)."
+Great. Also add a load balancer in front.
+You can try and run znnd on a Raspberry Pi.
+"All code will be open source, including Syrius and other repos. The community can design a framework on how to propose, vote and implement new features/protocol upgrades similar to BIPs."
+I think the best outcome for Syrius is to incorporate the full node like BitcoinCore wallet.
+Unfortunately multi-process is harder to achieve. For example Google made this impossible for Android since 10
+Use a remote node until the sync finishes. Anyway I think recursive ZK-SNARKS/STARKS can solve some issues.
+"Only one connection per wallet, so one handshake"
+"The tech is promising, but should be implemented for light nodes first imo"
+Another thing to consider is the initial peer discovery mechanism. Bitcoin uses community hardcoded seeders (check chainparams.cpp) Is there a better solution?
+"Bitcoin uses domain names (eg seed.bitcoin.sipa.be.), but DNS is a centralized system at the moment."
+bitcointalk.org/index.php?topic=691.msg8922#msg8922
+"I want to mention a couple of things: - Pillars should not serve clients; they should stay behind several full nodes in a sentry based network topology - ZIPs should be about tech and code, not about politics"
+"It would be nice if Pillar operators can make a step-by-step tutorial (+ scripts/maybe integrate this into znn-controller) for a sentry based topology to protect the network backbone.  Working hard on bug fixes for both znnd and syrius. We are aware of all issues, thank you for your feedback. All full node runners should prepare for the first network upgrade."
+How is the sentry network configuration setup for Pillars going? Hopefully it will be available before the upcoming network upgrade. Please note that Pillars will be required to initiate the network upgrade. All full nodes will also need to upgrade to the latest version.
+Everyone should download and run a full node
+The processing of momentums can be further improved. IBD is a very important topic for network decentralization.
+Next Syrius release will feature the embedded node so everyone will be part of the network
+Problems to think about in the long term: - IBD or ILD (Initial Ledger Download) - (dual)-ledger growth. - tx processing time (embedded VM) - p2p improvements
+I wouldn't call them compromises.. maybe trade-offs. I'm sure the codebase will evolve as more coders will join. Just look at Bitcoin now. And I also think more client implementations are needed. Rust is a very good candidate for an alternative go-zenon based node.
+It's embedded at protocol level.
+"Yes. Satoshi believed only in C/C++: that's why bitcoin has only one reference implementation. But programming languages evolve.. compilers, runtimes, you need to think 10 years into the future."
+Hopefully everyone will work as hard once Accelerator-Z is live.
+Another external VM can be integrated in order to facilitate user based smart contracts. I recommend WASM. Also don't forget unikernels.
+"""Success is not measured by what you accomplish, but by the opposition you have encountered, and the courage with which you have maintained the struggle against overwhelming odds."""
+"The community can build anything on top of a stable foundation. The embedded smart contract layer (native Go) is very powerful & modular and can support multiple VMs/runtimes, for example a custom zWASM (WebAssembly runtime). Unikernels can also be integrated at either protocol level or on top of a custom runtime. The team is already part of this amazing community and working hard at delivering the best possible outcome. I'm sure that more devs will join once Accelerator-Z is live."
+"The mentality should change from ""wen whitepaper"" ""wen alphanet"" ""wen code"" ""wen bridge"" ""wen *everything*"" to ""How can I participate and deliver value for the ecosystem?"". With Accelerator-Z will provide not only funding, but also a framework to deliver value for the entire ecosystem."
+"Great question. The embedded smart contracts layer is designed to support multiple VM/runtimes. For example someone wants to integrate EVM (I'm not a fan and don't recommend it) in order to support Solidity smart contracts. Others can integrate a WASM runtime for smart contracts (I recommend this) like Polkadot/Cosmos. We didn't want to impose a specific VM/runtime, the community should embrace a de-facto for smart contracts (hopefully WebAssembly)."
+No. Development NEVER ceases.
+I recommend a TSS scheme.
+Schnorr is great for scriptless scripts (atomic swaps with Bitcoin).
+"Suppose we'll integrate Solana VM/runtime for smart contracts. Do you know what happens next? You don't, because you didn't study the trade-offs for each particular runtime."
+Do you want a network that goes offline every other month? And it's about consensus and other things that are more complex to explain.
+Do you know what syrius v0.0.3 will have?
+What other node can you integrate beside znnd?
+For a HTLC you'll need timelocks + hashlocks => znn x btc atomic swaps
+For hashlock you'll need the same cryptographic hash function as Bitcoin
+Decred & Litecoin had the first atomic swap implementation
+In order to support any hash function/signature scheme/extra feature (depends) the code needs to be updated. After that a spork needs to be peformed (like a Bitcoin soft fork). The first spork will happen to integrate and enable Accelerator-Z.
+"Yes, exciting times ahead."
+Any other questions? Need to get back to work
+In the meanwhile teams can start designing cross-chain bridges for Hyperspace
+Syrius v0.0.3 will have the (znnd) embedded node
+The idea of integrating btcd is to provide interoperability by having access to the state of Bitcoin's blockchain
+Multi-chain wallet != interoperability
+All I can say is that there are 3 different solutions at the moment that can be implemented (bitcoin interoperability)
+/we_are_all_satoshi
+ZNNxBTC Portal
+90% of the code used in production is open source now
+I'm already running znnd without any issues on a flagship phone
+The priorities are Hyperspace (focused on porting SDKs and building decentralized cross-chain bridge alternatives) and Accelerator-Z launch.
+The codebase is Dart (Flutter). Pretty straightforward to make it compatible with Android and iOS once the code is public.
+The NFT standard will be under the umbrella of ZTS. You can help by extracting the main ideas and outlining the benefits/trade-offs
+Not yet. The embedded full nodes have private IPs. We need more public IP nodes. Recently we've made excellent progress on the p2p layer and this will improve both connectivity and IBD.
+Sentinel nodes is the answer. How can you ensure they are running a full node with a public IP?
+"Atomic swaps, DLCs"
+You can build more than you think using primitives like scriptless scripts (now that we have Taproot)
+The tech is straightforward. The devil is in the details.
+Merge mining.. Can we recycle PoW? Plasma..
+Afaik Decred and Litecoin had the first cross-chain atomic swap The state of the art is the Hash Time-lock Contract (BTC/LN leverages HTLCs for routing off-chain payments).
+Please wait for the release. The AcceleratorZ spork is live on mainnet. More info coming soon.
+The distribution of funds is 100% decentralized
+Keep up the good work
+"As a suggestion, you can also add gomobile compatibility for the Go SDK"
+https://git.xx.network/elixxir/client
+"""The xx client is designed to be used as a go library (and by extension a c library). Support is also present for go mobile to build Android and iOS libraries. We bind all exported symbols from the bindings package for use on mobile platforms"""
+We use a similar approach (C lib) for the embedded node.
+Someone noticed that A-Z spork is live on mainnet. Everyone should prepare for the next go-zenon/znnd release.
+It will be the most important release since Alphanet inception.
+Network upgrades will follow Bitcoin's softfork consensus - in NoM's case sporks
+Sounds like a plan. A public devnet for Hyperspace is needed. We'll support it.
+I also want to propose a no-fud zone starting today. Some accounts (including clones) are constantly spreading fud and disinformation that can severly damage the project in the future. I believe this community will step up and do the right thing: ban and isolate the members that are spreading fud. Constructive criticism is always welcomed. But spreading fud is disastrous and shoudn't be tolerated under any circumstances. I hope this will apply for every community channel.
+Don't forget that we're entering a stage where more people will join this community.
+What matters is building and supporting proactive community members. Everything else is nonsense that delays or destroys.
+Zenon Network is an independent entity. Unofficial partnerships or any associations with other projects are just speculations. This is a very clear statement that was repeated over again. Trying to make imaginary links to other entities or projects is called misinformation. Spreading misinformation is worse.
+This should be the new mentality
+Yes. Ideally we need a mechanism for auto peer discovery without relying on trusted third parties.
+"I anticipate there will never be more than 100K nodes, probably less. It will reach an equilibrium where it's not worth it for more nodes to join in. The rest will be lightweight clients, which could be millions."
+I think there are more than 100K Bitcoin full nodes right now...
+https://github.com/robertdavidgraham/masscan
+Lightweight nodes are enough for typical usage (BTC/LN)
+We need redundancy (config + mass scan + DNS + other options)
+Happy NoM day everyone!
+New repos incoming.
+Today we celebrate.
+Hyperspace will cover this.
+"""I think it would be possible for BitDNS to be a completely separate network and separate block chain, yet share CPU power with Bitcoin.  The only overlap is to make it so miners can search for proof-of-work for both networks simultaneously. The networks wouldn't need any coordination.  Miners would subscribe to both networks in parallel.  They would scan SHA such that if they get a hit, they potentially solve both at once.  A solution may be for just one of the networks if one network has a lower difficulty. I think an external miner could call getwork on both programs and combine the work.  Maybe call Bitcoin, get work from it, hand it to BitDNS getwork to combine into a combined work. Instead of fragmentation, networks share and augment each other's total CPU power.  This would solve the problem that if there are multiple networks, they are a danger to each other if the available CPU power gangs up on one.  Instead, all networks in the world would share combined CPU power, increasing the total strength.  It would make it easier for small networks to get started by tapping into a ready base of miners."""
+"""The incentive is to get the rewards from the extra side chains also for the same work."""
+"""If you're still worried about it, it's cryptographically possible to make a risk free trade. Â The two parties would set up transactions on both sides such that when they both sign the transactions, the second signer's signature triggers the release of both. Â The second signer can't release one without releasing the other."""
+We can do better: scripless scripts now (Taproot).
+"""Avoiding CPU power fragmentation is no longer a reason. Â Independent networks/chains can share CPU power without sharing much else"""
+Interoperability with Bitcoin can go beyond value transfer. Every detail must be taken into account.
+We can recycle Plasma generation via PoW for example. Or the other way around.
+You need to compute a PoW link in order to generate Plasma required by transactions on NoM. It may be possible to use the PoW links to merge mine Bitcoin; the other way around is to merge mine ZNN and create Plasma for Bitcoin feeless txs.
+"Now back to work, we need to ship code and make new releases."
+The embedded node is a full node. You just need to keep the wallet open.
+"You don't understand the purpose of this project. Nobody is forced to stay in this community. If you can contribute, please do so. If you cannot, please let others do the work."
+You try really hard to make imaginary connections. Fudding is easy. Contributing is harder.
+Anyone can apply to A-Z and build.
+This is a very complex project. It is evolving every day. The idea is to have a solid foundation so everyone can become a contributor.
+We have limited bandwidth to build and deliver. That's why Accelerator-Z was created in the first place.
+Everyone is invited to apply and contribute. It is up to them to decide if they want to build on a next generation dual-ledger network with feeless transactions.
+It is our responsability to educate them about the potential of this network.
+btc -> atomic swap to zbtc -> (feeless transactions) zbtc -> atomic swap back to btc
+You basically want to bypass btc fees if I get it right
+"Yes, but off-chain payment networks like LN work by operating with locked btc with final settlements happening on-chain. They ""wrap"" btc by locking it in payment channels, thus avoiding on-chain fees."
+"Yes, it is actually controlled by a ""smart contract"" (HTLC). The spending conditions are on-chain, while state updates happen off-chain."
+Not quite decentralized. But still good enough. (RUNE)
+Pillars can act as TSS signers and hold native btc vaults.
+Look. There are many paths to achieve Bitcoin interoperability. Hyperspace will support all these efforts.
+Memory usage will gradually grow because the node will connect to more peers.
+The public node will eventually connect to 60 peers
+Public nodes have public IPs so peers can connect to them
+You can use znnd or Syrius + Tor or VPN
+This was about the bootstrap for the p2p
+Don't forget to add the port (35998 for websocket
+I think we need more public nodes. We need them to sustain the network.
+"""We are more fulfilled when we are involved in something bigger than ourselves"""
+"""A lot of people automatically dismiss e-currency as a lost cause because of all the companies that failed since the 1990â€™s. I hope itâ€™s obvious it was only the centrally controlled nature of those systems that doomed them. I think this is the first time weâ€™re trying a decentralized, non-trust-based system."""
+That's why privacy preserving tech should be implemented at protocol layer + mandatory (unlike zcash)
+"""Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner. The risk is that if the owner of a key is revealed, linking could reveal other transactions that belonged to the same owner."""
+"""Indeed, Bitcoin is a distributed secure timestamp server for transactions. A few lines of code could create a transaction with an extra hash in it of anything that needs to be timestamped.Â I should add a command to timestamp a file that way."""
+The community will make the interface in Syrius. The NFT standard will be implemented at protocol level.
+Orbital will fund Hyperspace when A-Z starts
+No. That option was removed as it was necessary only for the Alphanet migration process.
+Everyone should update their nodes to v0.0.3 as soon as possible.  Only ~30% of active nodes are currently running znnd v0.0.3
+Not enough public nodes at the moment.
+You can contribute and add IPC support.
+It's not a priority right now. But IPC support can be added by the community.
+"You have valid points, but remember that Hyperspace focuses on general interoperability & SDK ports, while A-Z is open for a larger variety of projects ranging from VM integrations and node development to GameFi or even AI/IoT applications"
+A-Z is the first step to expand the ecosystem. We have the foundation. It is time to build on top of it.
+"""Hello all. I've decided to give Bitcoin a try. As a test, I want to see if I can make $1 USD from selling a picture. According toÂ this, 500 Bitcoins should roughly be a dollar (after PayPal fees), right? ... To get the picture, please send the coins to me and then send a Private Message stating the time you sent them. I will reply to your Private Message with a link to the picture."""
+"""If this generates any interest, I could offer some more of my pictures..."""
+"""I very much wanted to find some way to include a short message, but the problem is, the whole world would be able to see the message.Â  As much as you may keep reminding people that the message is completely non-private, it would be an accident waiting to happen. Unfortunately, ECDSA can only sign signatures, it can't encrypt messages, and we need the small size of ECDSA.Â  RSA can encrypt messages, but it's many times bigger than ECDSA."""
+NFT is just a recycled concept. I just want to gavalnize the community around interesting ideas. Hope I can inspire some of you to see beyond..
+Knowledge is the cure to ignorance.
+"""I don't know how to do SVG, but I did the original very large, over 500 pixels across, so it can be scaled down. Â I'll give the original when I'm finished. I had to custom tweak each icon size so the vertical lines land square on their pixels, otherwise they're ugly blurry and inconsistent. Â Such is the challenge of making icons. Â The original will be good for scaling to custom sizes between 48 and 500 but not smaller."""
+I hope Bitcoin will become fungible one day.
+Satoshi original Bitcoin logo.. handcrafted.. as NFT.. what do you think?
+The end of OP_RETURN is here.
+The aliens know
+"Someone can implement SSL support (https/wss), Tor integration and even gRPC"
+https://bitcoin.stackexchange.com/questions/8439/why-was-21-million-picked-as-the-number-of-bitcoins-to-be-created
+This would be a task for A-Z
+"""Escape the arbitrary inflation risk of centrally managed currencies!  Bitcoin's total circulation is limited to 21 million coins."""
+"There are many optimizations that can be implemented, no worries"
+This is caused by the auto-receiver. When you reopen Syrius the auto-receiver is restarted. Thank you for the feedback.
+Keep up the good work.
+Yes. I think a Bitcoin Core experience for the IBD can be implemented by the community during Hyperspace.
+Also the IBD will need attention soon. Many optimizations can be implemented.
+Blockspace is an important resource.
+Please update znnd and Syrius as soon as possible so AcceleratorZ will successfully activate
+You'll need at least 8GB of RAM and a GPU to run Syrius.
+"Because full nodes are first class citizens in NoM, more public nodes are required for the p2p network."
+During Phase 1 under ideal conditions. But we can get there; scalability in DLTs is mostly limited by physics and hardware. (up to 100k tps)
+Finality is another interesting topic. Deterministic finality is not good for decentralization.
+"Here you talk about settlement, another interesting topic for probabilistic finality networks like Bitcoin."
+This is the job of the p2p gossip protocol.
+Fuse some QSR or wait for A-Z spork that fixes this issue.
+Easy mode for Syrius can be done in A-Z
+Tx -> full nodes -> Pillars processing txs -> consensus -> appended to the block-lattice Sentinels are not implemented yet. Plasma is used as network gas and can be generated either by locking (fusing) QSR or by generating PoW (there is a hard limit for Plasma via PoW).
+"A huge amount of work is already done, but still there are many things left. Hopefully A-Z will be a success and gather as many devs as possible."
+Bitcoin is a success because many smart people are working on it. The community is the most important thing for a project. A community that supports proactive initiatives and welcomes constructive criticism.
+Before A-Z so people can start implement it as soon as possible.
+Smart contracts can be implemented by integrating a runtime/VM
+There are many things that require development efforts. Hopefully A-Z will cover them all.
+"Yes, the NFT standard will be under the umbrella of ZTS."
+"And hardware wallet support, mobile wallets, SDK ports, atomic swaps, interoperability solutions, browser extension, znnd optimizations (IBD, tx processing, light node), enhanced p2p layer using libp2p, NFT standard implementation, unikernel integrations, etc"
+We are single threaded now. Just one core. With A-Z and Hyperspace hopefully we'll be more like a GPU farm.
+The community is the only stewart of this project. Only the community can decide the fate of this project.
+"Bitcoin was a scam in 2010, money for criminals in 2014, gamble money in 2017. Now it is becoming a world reserve currency & officially adopted by one country."
+I agree. This project is in a continuous evolution.
+https://obituariesbitcoin.com/
+Satoshi achieved everything with nothing.
+"""I'm sure that in 20 yearsÂ thereÂ will either be very largeÂ transactionÂ volumeÂ or noÂ volume."""
+Apply to A-Z.
+No. I'm part of the community.
+Timelock functionality is already there - staking is one example of timelocked ZNN
+https://medium.com/fcats-blockchain-incubator/understanding-the-bitcoin-blockchain-header-a2b0db06b515
+"""Version 1 started with the genesis block in 2009. Until September 2012, no meaningful signaling took place during this time."""
+https://bitcoinops.org/en/topics/asicboost/
+This is a clear case.. every detail matters
+This was powerful fud at the time
+"Remember this.. the bigger you get, the greater the fud"
+AcceleratorZ is live on mainnet.
+Syrius source code is finally live on Github.
+No need to do this because you'll end up bloating the ledger. An activation model based on Pillar governance similar to Bitcoin's signalling process should be implemented (eg stage 1 signal protocol update stage 2 lock-in update stage 3 activate protocol update)
+"A small step towards rusty-znn, a Rust based znnd node"
+Multisig is the answer
+It's not just the wallet. You are also running a full node.
+You can pull the data from the ledger and display it in a separate app.
+https://github.com/taurusgroup/frost-ed25519
+"This variant is the one that is proposed for practical implementations, however it does not have a full security proof, unlike FROST-Interactive"
+You can read here: https://brink.dev/blog/2021/04/15/frost/
+Deterministic finality != decentralization
+The main idea is to follow a ZIP (Zenon Improvement Proposal) process in the long term.  Bitcoin has well defined BIPs rather than a roadmap.
+I think forwarding them to @SigliZNN first is a better idea.
+"The community should pick a runtime that is suitable and a team should implement it via AZ. I suggested WASM, indeed."
+"I'm sure everything will be built eventually. Some things are more complex than others, but everything is possible now because we have a solid foundation."
+Rome wasn't built in a day.
+I think Hyperspace is very clear in what should be achieved in the first 100 days of AZ.
+"You can use the PoW links implementation from go-zenon (pow folder)  It's about 2-3 times slower than the C implementation, but it works"
+I think the problem is reading the keyStore. Do you have multiple keyStores in the wallet folder?
+I really like all Hyperspace projects so far.
+Wanted to say everyone is doing an amazing job!
+We need the ZIP format to advance protocol upgrades
+Keep up the good work!
+Low Pillar Majority (>67%)  High Pillar Supermajority (>90%) Hope it works in practice.
+Looking forward for all A-Z teams to deliver and become part of the new HyperCore team.
+"HTLC is good, but PTLC is better. We can have both"
+"Instead of hashes, it uses adaptor signatures for locking"
+We can leverage threshold encryption to disable MEV completely
+Basically encrypt txs until they are included in a block to prevent MEV
+You can check out SKALE network and see their implementation
+The commmunity should focus on testing the interoperability projects from the Hyperspace Program: HTLC and the cross-chain bridge
+can someone compose a nice message to pin it about the interop projects?
+The LP Program is still ongoing. More details will be released when Hyperspace teams will be ready for Alphanet deployment.
+"Also the other interop solution looks very promising, as both Ethereum and Bitcoin have secp256k1"
+"The block-lattice is just for mapping accounts. The ultimate decision is still ""made"" by the consensus protocol."
+The dual-ledger has a very important property: separate consensus from other business logic
+And a nice hint: you can make the off-chain communication secure using X25519
+This is one neat property of Ed25519 signature scheme
+An embedded with Schnorr signatures to enable DLC for Sentinels would be nice.
+Speaking of protocol-level oracles
+And don't forget stratum-v2 and unikernels
+"Accelerator-Z was designed to support all community related efforts including support, chat moderation, channel curation and so on.  n@SigliZNN is literally one of the pillars of this community, an invaluable member and a green ray of hope for everyone in darker times, devoted to this project since the very beginning of this entire journey. I've encouraged him to make proposals and proceed requesting monthly funds from AZ in order to sustain himself and continue delivering for this amazing community."
+Good idea. Also a good moment to acknowledge the hard work of several community members that are striving to integrate interoperability solutions into NoM. And last but not least all other community members that are dedicated to this project in various ways.
+"From an architectural point of view, one of the best decisions so far was avoiding the implementation of a heavy VM at L1/on-chain. Do you know why?"
+"It seems counter-intuitive, I know. But there is a technology that is superior from every perspective and should be the focus for HyperCore teams after the interoperability solutions are deployed."
+It's a leaderless network.
+Everyone over here is steering the project in the right direction.
+Sentinels will come in Phase 1 and I'm sure their implementation will be top notch.
+Community members that are interested should dive deep into zk-rollups and understand the crypto behind and how they (perfectly) fit into NoM.
+"""A generation ago, multi-user time-sharing computer systems had a similar problem. Before strong encryption, users had to rely on password protection to secure their files, placing trust in the system administrator to keep their information private. Privacy could always be overridden by the admin based on his judgment call weighing the principle of privacy against other concerns, or at the behest of his superiors. Then strong encryption became available to the masses, and trust was no longer required. Data could be secured in a way that was physically impossible for others to access, no matter for what reason, no matter how good the excuse, no matter what."""
+There are no core devs. Only community devs.
+Same applies for Bitcoin. Everyone is just a contributor for a civilization value protocol.
+"""Centralized third parties are security holes."" - this applies to everything and everyone"
+It is a very strong requirement for a decentralized cryptocurrency. (privacy)
+Satoshi ignited the spark and only provided a direction.
+"The cryptography wasn't ready for Bitcoin. It had pseudo-privacy, but not sufficient for the massive success that followed."
+""">You will not find a solution to political problems in cryptography. Yes, but we can win a major battle in the arms race and gain a new territory of freedom for several years. Governments are good at cutting off the heads of a centrally controlled networks like Napster, but pure P2P networks like Gnutella and Tor seem to be holding their own."""
+PoW secures the block-lattice ledger by adding weight. This prevents some PoS attack vectors such as long range attacks.
+And the PoW is performed by users that want to issue feeless transactions on the network: this increases the security margin when the network usage is higher.
+The next challenge is to implement Dynamic Plasma (similar to Bitcoin's difficulty adjustment mechanism).
+Sentinels won't need to compute PoW. Just process and relay information.
+"The design architecture of NoM is actually brilliant: everything is taken into account and perfectly balanced to achieve the most of security, scalability and decentralization."
+Interesting approach. Sentinels can also serve as protocol level oracles.
+How many major Bitcoin mining pools do you know?
+"Yes. L1 should be minimal, robust and as efficient as possible. I know we can do better. And we will."
+This is an area overlooked by many. EVM at L1 is a deal breaker.
+I encourage you to re-read the whitepaper. All the information is over there.
+Because the current implementation is not final as described in the whitepaper.
+What I meant is that Sentinels can outsource the PoW generation to other sources.
+"""The adjustment on 04 Feb took it up from 1.34 times last year's difficulty to 1.82 times more difficult than last year. Â That means you generate only 55% as many coins for the same amount of work. The difficulty adjusts proportionally to the total effort across the network. Â If the number of nodes doubles, the difficulty will also double, returning the total generated to the target rate."""
+First Bitcoin client was initially available on what OS?
+"First it was released by Satoshi for Windows, then Linux and Laszlo ported it to MacOS"
+"""The reason I didn't use protocol buffers or boost serialization is because they looked too complex to make absolutely airtight and secure.Â  Their code is too large to read and be sure that there's no way to form an input that would do something unexpected. I hate reinventing the wheel and only resorted to writing my own serialization routines reluctantly."" Keep it simple."
+"""unsigned int is good until 2106. Â Surely the network will have to be totally revamped at least once by then. There should not be any signed int. Â If you've found a signed int somewhere, please tell me (within the next 25 years please) and I'll change it to unsigned int"""
+Thinking long term is key
+"""Theymos already said this...  ECDSA does not support encrypting messages.  Only digital signatures."""
+But we have Ed25519 and X25519
+"@SigliZNN has done a fantastic work so far. I appreciate your initiative, but I think helping & supporting the HyperSpace interop teams to deliver their solutions will have a bigger impact in the mid and long term."
+"I recommend everyone to swap wZNN to ZNN, as only ZNN is NoM native."
+"We should transition smoothly towards a new decentralized bridge that is in the workings by HyperSpace teams. The LP Program was also affected by this bug, but it is still ongoing."
+The community should coordinate with HyperSpace teams to ensure a good experience for new members that want to participate in this ecosystem.
+zk-telemetry. There are many ways to map the p2p network. But first we'll need to upgrade the p2p layer and using libp2p is a big step forward.
+Nothing changed since the last update.
+Great. Now we need some automatic way to release binaries for the public.
+I'm leaning towards incentivizing network decentralization at p2p layer. The infrastructure that runs the code is very important. We can start with small tasks such as integrating Tor into znnd and Syrius.
+You can check if we can integrate them.(LOOKINET)
+For p2p messages between network participants we can use   https://github.com/signalapp/libsignal It can be used to coordinate users that engage in atomic swaps.
+The crypto is already there: Ed25519 & X25519
+The whitepaper points out two sources of PoW: one CPU bound (ASIC resistant) and the other one ASIC friendly. The key is balacing them.
+The design principles of NoM's architecture are very important in the long term development of the network. A simple and robust L1 with minimal features will always outperform over-engineered and complex designs that try to accomplish too many things at once.
+The consensus is the most important part of a distributed network because it distributes trust in a set of untrusted peers that need to coordinate to achieve a common objective: maintaining the state of the ledger.
+There are many flavors for different variants of consensus protocols and usually we want add to the mix Sybil-resistant algorithms such as PoS and PoW.
+"PoW is the most pure form of Sybil-resistance. It was designed as anti-Sybil mechanism back in the '90s. PoS is a weaker anti-Sybil mechanism than PoW, but coupled with a classical consensus protocol makes it a very good candidate to Bitcoin's PoW."
+"But pure PoS based consensus protocols are flawed from an economic/societal perspective that undermine decentralization and in some cases, certain security thresholds."
+PoW evolved into two opposite flavors: ASIC-friendly and ASIC-resistant. Bitcoin is ASIC-friendly because its sole purpose is to convert energy as efficient as possible.
+But ASIC-resistant algos are important to keep participation as decentralized as possible.
+1 CPU = 1 vote was just an assumption of Satoshi Hal clearly envisioned a widespread Bitcoin adoption at industrial scale.
+"So we have BFT consensus based on virtual voting (outlined in a paper in '93), PoS, (dual) PoW and now let's talk about the ledger structure."
+The idea behind a dual ledger system is to decouple consensus from chain weight. This is very important because consensus and chain weight are fundamental for a L1.
+"Bitcoin has consensus coupled with chain weight: ""longest chain of most accumulated proof of work""."
+NoM has consensus decoupled from chain weight (added when users are performing tx with PoW).
+"None of top L1s are designed to take into account all those variables and are aiming to ""solve"" the scalability trilemma."
+"Me neither, but you have to adapt whenever is possible. Satoshi couldn't imagine that the hardware itself will be molded to fit the SHA-256d algo."
+Increased throughput and decentralization through participation.
+"In other networks, users pay a fee to make transactions and usually miners are rewarded. In NoM, users pay with Plasma (that usually involves PoW) to make transactions and by doing so, they add weight to the ledger, thus effectively securing it."
+"And on top of this architecture, a dual-coin economy was designed to balance and encourage active participation at every level: you can literally start with nothing but your own skills and contribute via the on-chain Accelerator and be rewarded."
+"The dual-coin economy also takes into account ""greedy staking"" and other ""the rich getting richer"" schemes and provides long-term sustainability for active network participants."
+And you need both: ASIC-friendly for security and ASIC-resistant for participation. I think it's safe to say SHA-256d and RandomX are the best candidates (reminder: we currently have SHA-3 as pow-links).
+Increased thoughput via dynamic Plasma - ZK-proof rollups are part of the strategy to keep the L1 minimal and robust.
+Bitcoin does exactly this: it is indeed minimal (non-Turing complete) and very robust.
+Networks that implemented a heavy VM (EVM/WASM) at L1 will always be plagued by scalability issues in the long run.
+"Unikernels can be implemented on top, as well as other ZK rollup solutions that will support Turing-complete smart contracts."
+"There are a lot of things to do, but rest assured that you are building on a solid foundation with a long term vision."
+The state of the rollup will be posted and verified on-chain.
+"For the moment the network is capped, that's why dynamic Plasma is the next logical step for the HyperCore teams."
+And all community members are encouraged to participate in those discussions.
+"No, this is just an artificial limit. The network can process several times more with the current implementation."
+But obviously we can do even better with the implementation outlined in the whitepaper. Coupled with 10-100x more using ZK rollups.
+"The p2p layer needs attention, too. And ""27070"" won't happen again."
+"I tried to help our community better understand the design principles behind NoM and why it's superior in many aspects, especially in terms of decentralization, scalability and security."
+Every community member should be aware that holding native assets is the only way to preserve all the properties of the underlying chain.
+HyperCore teams should start releasing code and opening PRs so we can review the code.
+"There are no core devs"". Only HyperCore devs."""
+What I can tell you is that you're not (going to be) alone.
+"2022 was hard for everybody, but there is hope for 2023"
+There is no dependency between the two. Dynamic Plasma is more urgent than Sentinels after the HyperCore teams deliver the interop solutions.
+"They should hurry up as we need to move on and make progress at a greater pace. All devs are invited to open PRs until the end of February or earlier. After review, they will be merged and the community will need to coordinate for upcoming network upgrades."
+"I've already explained a lot of things that are important in the long run (mainly technical aspects). The AMA will contain wen sentinels / x / y / z"" and you should already know the answer."""
