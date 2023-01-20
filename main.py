@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix='!',intents=intents)
 @bot.command()
 async def wen(ctx):
 
-    with open('kaine.csv', 'r') as csvfile:
+    with open('kaine_v01.csv', 'r') as csvfile:
         data = csv.reader(csvfile)
         random_row = random.choice(list(data))
         print(random_row[0])
